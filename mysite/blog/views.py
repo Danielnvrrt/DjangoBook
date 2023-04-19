@@ -12,7 +12,7 @@ def post_detail(request, year, month, day, post):
                              slug=post,
                              status='published',
                              publish__year=year,
-                             publish__mont=month,
+                             publish__month=month,
                              publish__day=day)
     return render(request, 'blog/post/detail.html', {'post': post})
 
